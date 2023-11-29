@@ -1,0 +1,53 @@
+<header>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul id="menu-list">
+            <li><a href="../views/index.html">Home</a></li>
+            <li><a href="../views/meals.html">My Meals</a></li>
+            <li><a href="#recipes">Saved Recipes</a></li>
+            <li><a href="#shopping list">Shopping List</a></li>
+        </ul>
+    </div>
+</header>
+
+<style>
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-menu {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+</style>

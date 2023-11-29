@@ -1,0 +1,10 @@
+.add-meal-btn {
+    background-image: url(../public/svg/plus.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

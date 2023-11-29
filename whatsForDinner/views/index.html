@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner?</title>
+    <link rel="stylesheet" href="/whatsForDinner/public/default.css">
+    <link rel="stylesheet" href="/whatsForDinner/public/index.css">
+    <link rel="stylesheet" href="/whatsForDinner/public/weekTable.css">
+</head>
+<body>
+
+    <div id="headerContainer"></div>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th id="week-commencing"></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td class="monday-breakfast">
+                    <button class="add-meal-btn" data-day="monday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="tuesday-breakfast">
+                    <button class="add-meal-btn" data-day="tuesday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="wednesday-breakfast">
+                    <button class="add-meal-btn" data-day="wednesday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="thursday-breakfast">
+                    <button class="add-meal-btn" data-day="thursday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="friday-breakfast">
+                    <button class="add-meal-btn" data-day="friday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="saturday-breakfast">
+                    <button class="add-meal-btn" data-day="saturday" data-meal-type="breakfast"></button>
+                </td>
+                <td class="sunday-breakfast">
+                    <button class="add-meal-btn" data-day="sunday" data-meal-type="breakfast"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td class="monday-lunch">
+                    <button class="add-meal-btn" data-day="monday" data-meal-type="lunch"></button>
+                </td>
+                <td class="tuesday-lunch">
+                    <button class="add-meal-btn" data-day="tuesday" data-meal-type="lunch"></button>
+                </td>
+                <td class="wednesday-lunch">
+                    <button class="add-meal-btn" data-day="wednesday" data-meal-type="lunch"></button>
+                </td>
+                <td class="thursday-lunch">
+                    <button class="add-meal-btn" data-day="thursday" data-meal-type="lunch"></button>
+                </td>
+                <td class="friday-lunch">
+                    <button class="add-meal-btn" data-day="friday" data-meal-type="lunch"></button>
+                </td>
+                <td class="saturday-lunch">
+                    <button class="add-meal-btn" data-day="saturday" data-meal-type="lunch"></button>
+                </td>
+                <td class="sunday-lunch">
+                    <button class="add-meal-btn" data-day="sunday" data-meal-type="lunch"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td class="monday-dinner">
+                    <button class="add-meal-btn" data-day="monday" data-meal-type="dinner"></button>
+                </td>
+                <td class="tuesday-dinner">
+                    <button class="add-meal-btn" data-day="tuesday" data-meal-type="dinner"></button>
+                </td>
+                <td class="wednesday-dinner">
+                    <button class="add-meal-btn" data-day="wednesday" data-meal-type="dinner"></button>
+                </td>
+                <td class="thursday-dinner">
+                    <button class="add-meal-btn" data-day="thursday" data-meal-type="dinner"></button>
+                </td>
+                <td class="friday-dinner">
+                    <button class="add-meal-btn" data-day="friday" data-meal-type="dinner"></button>
+                </td>
+                <td class="saturday-dinner">
+                    <button class="add-meal-btn" data-day="saturday" data-meal-type="dinner"></button>
+                </td>
+                <td class="sunday-dinner">
+                    <button class="add-meal-btn" data-day="sunday" data-meal-type="dinner"></button>
+                </td>
+            </tr>
+        </table>
+
+        <dialog id="add-meal-modal">
+            <label for="meal-name">Meal Name: </label>
+            <input type="text" name="meal-name" id="meal-name">
+            <br><br>
+            <button id="cancel-button">Cancel</button>
+            <button id="reset-button">Reset</button>
+            <button id="add-meal-confirm">Add</button>
+        </dialog>
+    </section>
+
+    <script src="/whatsForDinner/script/index.js"></script>
+    <script src="/whatsForDinner/script/weekTable.js"></script>
+</body>
+</html>
